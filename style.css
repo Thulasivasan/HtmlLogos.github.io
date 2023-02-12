@@ -42,6 +42,7 @@ body{
     color: white;
 }
 img{
+    height: 144px;
     border-radius: 1em;
     box-shadow: 0 0 .5em rgba(0, 0, 0, .1);
     background: rgba( 255, 255, 255, 0.3)
