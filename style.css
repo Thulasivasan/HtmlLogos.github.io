@@ -16,7 +16,7 @@ body{
     position: relative;
     background: rgb(0, 0, 0);
     height: 100vh;
-    padding-top: 3em;
+    padding-top: 1.5em;
     /* transform: translateX(-100%); */
     /* animation: initial-transition 3s ease-out 400ms 1 forwards; */
 }
@@ -100,9 +100,9 @@ body{
 }
 .text-3{
     position: absolute;
-    inset-block: 42%;
+    inset-block: 39%;
     inset-inline: 10%;
-    line-height: 2rem;
+    line-height: 1em;
     font-size: 3em;
     color:#fff;
     
