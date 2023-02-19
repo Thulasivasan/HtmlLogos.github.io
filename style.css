@@ -17,14 +17,8 @@ body{
     background: rgb(0, 0, 0);
     height: 100svh;
     padding-top: 1.5em;
-    /* transform: translateX(-100%); */
-    /* animation: initial-transition 3s ease-out 400ms 1 forwards; */
 }
-/* @keyframes initial-transition {
-    50%{
-        transform: translateX(100%);
-    }
-} */
+
 .nav{
     display: flex;
     justify-content: center;
@@ -78,15 +72,16 @@ body{
         transform: translateX(2em);
     }
 }
-.orange-circle{
+.violet-circle{
     bottom: 6em;
     left:11em;
     scale: 1.3;
-    background: linear-gradient(-45deg,orange,red); 
+    background: linear-gradient(-45deg,rgb(255, 4, 251),rgb(119, 0, 255)); 
     box-shadow: 0 0 10px lightcoral;
-    animation: orange 15s linear infinite;  
+    animation: violet 15s linear infinite;
+
 }
-@keyframes orange{
+@keyframes violet{
     25%{
         transform: translateX(-2em);
         rotate: 360deg;
@@ -99,13 +94,30 @@ body{
     }
 }
 .text-3{
-    position: absolute;
-    inset-block: 39%;
-    inset-inline: 10%;
-    line-height: 1em;
-    font-size: 3em;
+    margin-inline: auto;
+    margin-top: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* border: 1px solid white; */
+    /* border-color:green green rgb(159, 4, 255) rgb(159, 4, 255); */
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    width: max-content;
+    rotate: -4deg;
+    padding: .4em .6em;
+    transform: scale(2);
     color:#fff;
-    
+    text-shadow: 0 0 .5em white;
+    box-shadow: -.1em .1em .5em violet;
+    /* box-shadow: .1em -.1em .5em green; */
+    text-align: center;
+    transition: all 300ms ease-in;
+}
+.text-3 *{
+    padding: 0;
+    margin: 0;
 }
 
 /* CONTAINER ONE */
@@ -129,8 +141,8 @@ body{
     margin: 0;
 }
 .card-header-1{
-    color: skyblue;
-    text-shadow: 0 0 5px skyblue;
+    color: dodgerblue;
+    text-shadow: 0 0 5px dodgerblue;
 }
 .card-container-1 > li{
     opacity: 90%;
@@ -141,7 +153,7 @@ body{
     margin-inline: .5rem;
     margin-block:.5rem;
     cursor: pointer;
-    background: skyblue;
+    background: dodgerblue;
     color: rgb(0, 0, 0);
     box-shadow: 0 0 10px dodgerblue;
     border-radius: .1rem;
@@ -150,8 +162,12 @@ body{
 .card-images-1{
     height: 8em;
     border-radius: 1em;
-    box-shadow: 0 0 .5em rgba(0, 0, 0, .1);
-    background: rgba( 255, 255, 255, 0.3)
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .2);
+    background: rgba( 255, 255, 255, 0.2)
+}
+.twitter-image{
+    filter:drop-shadow(1px 1px 1px black);
+    background: rgba(255, 255, 255, .19);
 }
 .card-container-1 > *:hover{
     transform: scale(1.1) translateY(-1em);
@@ -159,7 +175,6 @@ body{
     z-index: 3;
     rotate: -5deg;
     color: white;
-    filter: blur(0);
 }
 
 /* CONTAINER TWO */
@@ -193,46 +208,50 @@ body{
     flex-direction: column;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 15px rgb(255, 255, 255);
-    box-shadow: -2px 0 10px #000;
     height: 13em;
     width: 9em;
     border-radius: .5em;
     background: dodgerblue;
-    transition: transform 600ms;
-    /* filter: blur(2px); */
+    transition: all 600ms;
 }
+
 .big-card:nth-child(1){
     color: rgb(255, 255, 255);
     font-weight: 500;
     background: dodgerblue;
-    box-shadow: 0 0 15px rgb(255, 255, 255);
+    box-shadow: 0 0 10em dodgerblue;
     text-shadow: 0 0 10px rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
     border-radius: 1px;
     z-index: 5;
     transition: all 600ms;
 }
-.card-container-2:hover{
-    cursor: pointer
-}
 .card-container-2:hover > .big-card:nth-child(1){
     rotate: -360deg;
     transform: translate(300%, 0%) scale(0);
+    cursor: pointer;
 }
 .card-container-2:hover > .big-card:nth-child(2){
     transform: translate(-8rem, 1rem) rotate(-40deg) scale(1.2);
     z-index: 1;
+    box-shadow: 0 0  3em dodgerblue;
+    filter: opacity(.8);
 }
 .card-container-2:hover > .big-card:nth-child(3){
     transform: translate(-2rem, -1.5rem) rotate(-15deg) scale(1.2);
     z-index: 2;
+    box-shadow: 0 0  3em dodgerblue;
+    filter: opacity(.8);
 }
 .card-container-2:hover > .big-card:nth-child(4){
     transform: translate(4rem, -1.5rem) rotate(8deg) scale(1.2);
     z-index: 3;
+    box-shadow: 0 0  3em dodgerblue;
+    filter: opacity(.8);
 }
 .card-container-2:hover > .big-card:nth-child(5){
     transform: translate(9rem, 1rem) rotate(40deg)  scale(1.2);
     z-index: 4;
+    box-shadow: 0 0 3em dodgerblue;
+    filter: opacity(.8);
 }
 
