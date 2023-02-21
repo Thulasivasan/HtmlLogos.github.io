@@ -91,27 +91,30 @@ body{
     }
 }
 .text-3{
-    margin-inline: auto;
-    margin-top: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    margin-inline: auto;
+    /* margin-top: 35vh; */
     border-radius: 5px;
     aspect-ratio: 1 / 1;
     width: max-content;
     rotate: -4deg;
     padding: .4em .6em;
-    transform: scale(1.7);
+    /* transform: scale(1.7); */
     color:#fff;
     text-shadow: 0 0 .5em white;
     box-shadow: -.2em .2em .5em .1em rgb(255, 0, 255),
                 .2em -.2em .5em .1em rgb(0, 255, 0);
-    text-align: center;
+        
 }
 .text-3 *{
+    font-size: 2em;
     padding: 0;
     margin: 0;
+}
+.margin-container{
+    margin-block: 36vh;
 }
 
 /* CONTAINER ONE */
