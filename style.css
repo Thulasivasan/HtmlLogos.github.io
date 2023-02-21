@@ -5,9 +5,6 @@ body{
     background:rgb(0, 0, 0);
     margin: 0;
     padding: 0;
-    /* height: 300vh;
-    scroll-behavior: smooth;
-    transition: 500ms; */
 }
 
 /* CONTAINER - 3*/
@@ -16,7 +13,7 @@ body{
     position: relative;
     background: rgb(0, 0, 0);
     height: 100svh;
-    padding-top: 1.5em;
+    padding-top: 1.4em;
 }
 
 .nav{
@@ -100,9 +97,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    /* border: 1px solid white; */
-    /* border-color:green green rgb(159, 4, 255) rgb(159, 4, 255); */
-    border-radius: 20px;
+    border-radius: 5px;
     aspect-ratio: 1 / 1;
     width: max-content;
     rotate: -4deg;
@@ -110,10 +105,9 @@ body{
     transform: scale(2);
     color:#fff;
     text-shadow: 0 0 .5em white;
-    box-shadow: -.1em .1em .5em violet;
-    /* box-shadow: .1em -.1em .5em green; */
+    box-shadow: -.2em .2em .5em .1em rgb(255, 0, 255),
+                .2em -.2em .5em .1em rgb(0, 255, 0);
     text-align: center;
-    transition: all 300ms ease-in;
 }
 .text-3 *{
     padding: 0;
@@ -187,6 +181,7 @@ body{
     flex-direction: column;
     height: 100svh;
     background: rgb(0, 0, 0);
+    overflow:hidden;
 }
 
 .card-container-2{
@@ -219,7 +214,7 @@ body{
     color: rgb(255, 255, 255);
     font-weight: 500;
     background: dodgerblue;
-    box-shadow: 0 0 10em dodgerblue;
+    box-shadow: 0 0 0 .7em rgba(30, 144, 255, .2);
     text-shadow: 0 0 10px rgb(255, 255, 255);
     border-radius: 1px;
     z-index: 5;
@@ -232,26 +227,18 @@ body{
 }
 .card-container-2:hover > .big-card:nth-child(2){
     transform: translate(-8rem, 1rem) rotate(-40deg) scale(1.2);
-    z-index: 1;
-    box-shadow: 0 0  3em dodgerblue;
-    filter: opacity(.8);
+    box-shadow: 0 0 1em #000,0 0 0 .5em rgba(30, 144, 255, .2);
 }
 .card-container-2:hover > .big-card:nth-child(3){
     transform: translate(-2rem, -1.5rem) rotate(-15deg) scale(1.2);
-    z-index: 2;
-    box-shadow: 0 0  3em dodgerblue;
-    filter: opacity(.8);
+    box-shadow: 0 0 1em #000, 0 0 0 .5em rgba(30, 144, 255, .2);
 }
 .card-container-2:hover > .big-card:nth-child(4){
     transform: translate(4rem, -1.5rem) rotate(8deg) scale(1.2);
-    z-index: 3;
-    box-shadow: 0 0  3em dodgerblue;
-    filter: opacity(.8);
+    box-shadow: 0 0 1em #000, 0 0 0 .5em rgba(30, 144, 255, .2);
 }
 .card-container-2:hover > .big-card:nth-child(5){
     transform: translate(9rem, 1rem) rotate(40deg)  scale(1.2);
-    z-index: 4;
-    box-shadow: 0 0 3em dodgerblue;
-    filter: opacity(.8);
+    box-shadow: 0 0 1em #000, 0 0 0 .5em rgba(30, 144, 255, .2);
 }
 
